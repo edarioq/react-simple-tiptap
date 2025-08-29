@@ -44,8 +44,8 @@
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
   }
 
@@ -137,8 +137,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 0.25rem;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
   }
 
@@ -163,7 +163,6 @@
     }
   }
 
-  // === Individual File Preview Styles ===
   .tiptap-image-upload-preview {
     position: relative;
     border-radius: var(--tt-radius-md, 0.5rem);
