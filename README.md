@@ -33,23 +33,31 @@ npm install react react-dom
 
 ### Basic Usage
 
-```tsx
-import React, { useState } from "react";
-import { ReactSimpleTiptap } from "simple-text-editor";
+````tsx
+import { ReactSimpleTiptap } from "react-simple-tiptap";
 
-function App() {
-  const [content, setContent] = useState("<p>Hello world!</p>");
+import "react-simple-tiptap/styles";
 
-  return <ReactSimpleTiptap value={content} onChange={setContent} />;
+interface Props {
+  content: string;
+  onContentUpdate: (content: string) => void;
 }
-```
+
+export function App({ content, onContentUpdate }: Props) {
+   const [content, setContent] = useState("<p>Hello world!</p>");
+
+  return (
+    <ReactSimpleTiptap content={content} onContentUpdate={setContent} />
+  );
+}
+
 
 ## Props
 
-| Prop            | Type                              | Default               | Description                                   |
-| --------------- | --------------------------------- | --------------------- | --------------------------------------------- |
-| `value`         | `string`                          | `""`                  | HTML content of the editor                    |
-| `onChange`      | `(content: string) => void`       | -                     | Callback fired when content changes           |
+| Prop       | Type                        | Default | Description                         |
+| ---------- | --------------------------- | ------- | ----------------------------------- |
+| `content`    | `string`                    | `""`    | HTML content of the editor          |
+| `onContentUpdate` | `(content: string) => void` | -       | Callback fired when content changes |
 
 ## Styling
 
@@ -74,7 +82,7 @@ Dark mode and light mode are supported out of the box. The editor also comes wit
 git clone <your-repo-url>
 cd simple-text-editor
 npm install
-```
+````
 
 ### Development Server
 
