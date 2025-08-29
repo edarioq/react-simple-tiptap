@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tiptap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A pre-configured text editor component for React, based on Tiptap's Simple Editor template",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -53,6 +53,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "esbuild-sass-plugin": "^3.3.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.89.2",

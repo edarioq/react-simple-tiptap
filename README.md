@@ -35,12 +35,12 @@ npm install react react-dom
 
 ```tsx
 import React, { useState } from "react";
-import { SimpleTextEditor } from "simple-text-editor";
+import { ReactSimpleTiptap } from "simple-text-editor";
 
 function App() {
   const [content, setContent] = useState("<p>Hello world!</p>");
 
-  return <SimpleTextEditor value={content} onChange={setContent} />;
+  return <ReactSimpleTiptap value={content} onChange={setContent} />;
 }
 ```
 

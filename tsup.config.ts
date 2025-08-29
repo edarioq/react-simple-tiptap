@@ -1,4 +1,5 @@
 import { defineConfig } from "tsup";
+import { sassPlugin } from "esbuild-sass-plugin";
 
 export default defineConfig({
   entry: ["src/index.ts"],
@@ -11,7 +12,5 @@ export default defineConfig({
   banner: {
     js: "'use client';",
   },
-  loader: {
-    ".scss": "css",
-  },
+  esbuildPlugins: [sassPlugin()],
 });
