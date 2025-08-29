@@ -1,1 +1,1 @@
-export { default as SimpleTextEditor } from "./text-editor/index";
+export { default as ReactSimpleTiptap } from "./text-editor/index";

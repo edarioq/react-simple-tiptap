@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import { SimpleTextEditor } from "../src";
+import { ReactSimpleTiptap } from "../src";
 
 function App() {
   const [content, setContent] = useState("");
@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Simple Text Editor Development</h1>
-      <SimpleTextEditor content={content} onContentUpdate={setContent} />
+      <ReactSimpleTiptap content={content} onContentUpdate={setContent} />
     </div>
   );
 }

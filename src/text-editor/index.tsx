@@ -164,7 +164,7 @@ interface Props {
   onContentUpdate: (content: string) => void;
 }
 
-export default function TextEditor({ content, onContentUpdate }: Props) {
+export default function ReactSimpleTiptap({ content, onContentUpdate }: Props) {
   const isMobile = useIsMobile();
   const windowSize = useWindowSize();
   const [mobileView, setMobileView] = React.useState<
