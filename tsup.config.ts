@@ -12,5 +12,9 @@ export default defineConfig({
   banner: {
     js: "'use client';",
   },
-  esbuildPlugins: [sassPlugin()],
+  esbuildPlugins: [
+    sassPlugin({
+      type: "style",
+    }),
+  ],
 });
