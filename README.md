@@ -1,4 +1,4 @@
-# Simple Text Editor
+# React Simple Tiptap
 
 A powerful, lightweight rich text editor component for React applications. Built with Tiptap and featuring a clean, intuitive interface for creating and editing formatted content.
 

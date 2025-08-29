@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Simple Text Editor Development</h1>
+      <h1>React Simple Tiptap Development</h1>
       <ReactSimpleTiptap content={content} onContentUpdate={setContent} />
     </div>
   );
