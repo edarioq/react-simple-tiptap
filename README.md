@@ -53,7 +53,7 @@ function App() {
 
 ## Styling
 
-The editor comes with default styles, but you can customize it by importing your own CSS.
+Dark mode and light mode are supported out of the box. The editor also comes with default styles, but you can customize it by importing your own CSS.
 
 ## Keyboard Shortcuts
 

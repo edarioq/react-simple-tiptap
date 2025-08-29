@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tiptap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pre-configured text editor component for React, based on Tiptap's Simple Editor template",
   "type": "module",
   "main": "./dist/index.cjs",
